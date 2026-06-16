@@ -40,6 +40,16 @@ nav ul li a:hover {
 }
 
 /* HERO SECTION */
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #a855f7;
+  margin-bottom: 20px;
+}
+
 #hero {
   background: linear-gradient(135deg, #0d0d0d, #1a0a2e);
   color: white;
