@@ -117,13 +117,16 @@ p {
   margin-bottom: 20px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.4);
   border-left: 4px solid #a855f7;
+  transition: all 0.3s ease;
+  cursor: pointer;
 }
 
-.project-card h3 {
-  font-size: 20px;
-  color: #ffffff;
-  margin-bottom: 8px;
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(168, 85, 247, 0.3);
+  border-left: 4px solid #a855f7;
 }
+
 
 /* CONTACT */
 #contact a {
@@ -158,4 +161,23 @@ p {
 .social-links a:hover {
   background-color: #a855f7;
   color: #ffffff;
+}
+/* FOOTER */
+footer {
+  background-color: #111111;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+  border-top: 1px solid #2a2a2a;
+}
+
+footer p {
+  color: #aaaaaa;
+  margin-bottom: 16px;
+}
+
+footer .copyright {
+  color: #555555;
+  font-size: 13px;
+  margin-top: 16px;
 }
