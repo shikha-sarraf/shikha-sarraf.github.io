@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Shikha Sarraf">
+  <meta name="description" content="Contact Shikha Sarraf - BEI student at Pulchowk Campus, Passionate about AI / ML">
+  <title>Shikha Sarraf | Contacts</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="static-page">
+
+  <!-- NAVIGATION BAR (STATIC WHITE THEME) -->
+  <nav class="main-navbar sticky-static" id="main-navbar">
+    <div class="navbar-content">
+      <div class="navbar-logo">
+        <img src="me.png" alt="Profile" class="logo-avatar">
+        <div class="logo-text">
+          <span class="logo-name">Shikha Sarraf</span>
+          <span class="logo-subtitle">sarrafshikha1@gmail.com</span>
+        </div>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-item" data-tab="home">Home</a></li>
+        <li><a href="about.html" class="nav-item" data-tab="about">About</a></li>
+        <li><a href="projects.html" class="nav-item" data-tab="projects">Projects</a></li>
+        <li><a href="blog.html" class="nav-item" data-tab="blog">Blog</a></li>
+        <li><a href="contacts.html" class="nav-item active" data-tab="contacts">Contacts</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTAINER -->
+  <main class="page-container">
+    <section id="contacts-section" class="section-container active-section" style="opacity: 1; transform: none;">
+      <div class="section-header">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="section-subtitle">Feel free to drop a message! Let's collaborate or build something together.</p>
+      </div>
+      
+      <div class="contact-wrapper">
+        <div class="contact-details-box">
+          <div class="contact-item">
+            <div class="contact-icon">📧</div>
+            <div class="contact-txt">
+              <strong>Email</strong>
+              <a href="mailto:sarrafshikha1@gmail.com">sarrafshikha1@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">📍</div>
+            <div class="contact-txt">
+              <strong>Location</strong>
+              <span>Kathmandu, Nepal (From Birgunj)</span>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon">🎓</div>
+            <div class="contact-txt">
+              <strong>Education</strong>
+              <span>BEI, Pulchowk Campus, IOE</span>
+            </div>
+          </div>
+        </div>
+        
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('The message menu is under work, please mail to - sarrafshikha1@gmail.com');">
+          <div class="form-row">
+            <div class="form-group">
+              <label for="c_name">Your Name</label>
+              <input type="text" id="c_name" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label for="c_email">Your Email</label>
+              <input type="email" id="c_email" placeholder="john@example.com" required>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="c_subject">Subject</label>
+            <input type="text" id="c_subject" placeholder="Collaboration / Job Opportunity" required>
+          </div>
+          <div class="form-group">
+            <label for="c_msg">Message</label>
+            <textarea id="c_msg" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="contact-submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <h3>Shikha Sarraf</h3>
+        <p>BEI Pulchowk Student | AI/ML enthusiast</p>
+      </div>
+      <div class="footer-socials">
+        <a href="https://github.com/shikha-sarraf/" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/shikha-sarraf-b10325328/" target="_blank">LinkedIn</a>
+        <a href="https://www.instagram.com/shikha28730/" target="_blank">Instagram</a>
+      </div>
+    </div>
+    <div class="footer-divider"></div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Shikha Sarraf. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
