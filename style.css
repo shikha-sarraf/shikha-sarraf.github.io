@@ -1591,13 +1591,29 @@ p {
   }
 
   .main-navbar {
-    display: none; /* Hide default navbar on small screens to simplify structure, or keep simplified */
+    display: block;
+    background-color: #ffffff !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   }
 
   .nav-anchor {
+    display: block;
+    height: 0;
+  }
+
+  .navbar-logo .logo-text {
     display: none;
   }
   
+  .nav-links {
+    gap: 8px;
+  }
+
+  .nav-item {
+    padding: 18px 8px;
+    font-size: 13px;
+  }
+
   .feed-grid {
     grid-template-columns: 1fr;
   }
