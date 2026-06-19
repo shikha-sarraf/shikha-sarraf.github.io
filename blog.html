@@ -37,70 +37,91 @@
 
   <!-- MAIN CONTAINER -->
   <main class="page-container">
-    <section id="blog-section" class="section-container active-section" style="opacity: 1; transform: none;">
-      <div class="section-header">
+    <section id="blog-section" class="section-container active-section" style="opacity: 1; transform: none; padding: 40px 0;">
+      <div class="section-header" style="margin-bottom: 40px;">
         <h2 class="section-title">Blog Articles & Insights</h2>
         <p class="section-subtitle">Sharing learning notes, technology deep dives, and project experiences.</p>
       </div>
-      
+      <!-- BLOG GRID -->
       <div class="blog-grid">
         <!-- BOX 1: TECH BLOG -->
-        <article class="blog-card">
-          <div class="blog-meta-header">
-            <span class="blog-category">Tech Blog</span>
+        <article class="premium-blog-card tech">
+          <div class="blog-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-5 14H4v-4h11v4zm0-5H4V9h11v4zm5 5h-4V9h4v9z"/></svg>
           </div>
-          <h3>Technical Writing & Deep Dives</h3>
-          <p>Read about deep reinforcement learning algorithms, audio classification networks, and database normalizations.</p>
-          <ul class="blog-post-list">
-            <li>
-              <a href="#">Demystifying RL with TurtleBot3 <span class="post-date">Jun 2026</span></a>
+          <h3>Technical Writing</h3>
+          <p class="card-subtitle">Read about deep reinforcement learning algorithms, audio classification networks, and database normalizations.</p>
+          
+          <ul class="premium-post-list">
+            <li class="premium-post-item">
+              <a href="#">
+                <span class="post-link-title">
+                  <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2v8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                  Demystifying RL with TurtleBot3
+                </span>
+                <span class="post-meta-date">Jun 2026</span>
+              </a>
             </li>
-            <li>
-              <a href="#">Fake Audio Detection: CNN vs Transformer <span class="post-date">May 2026</span></a>
+            <li class="premium-post-item">
+              <a href="#">
+                <span class="post-link-title">
+                  <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2v8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                  Fake Audio: CNN vs Transformer
+                </span>
+                <span class="post-meta-date">May 2026</span>
+              </a>
             </li>
           </ul>
         </article>
 
-        <!-- BOX 2: PERSONAL BLOG -->
-        <article class="blog-card">
-          <div class="blog-meta-header">
-            <span class="blog-category">Personal Blog</span>
+        <!-- BOX 2: PERSONAL reflections -->
+        <article class="premium-blog-card personal">
+          <div class="blog-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
           </div>
-          <h3>Reflections & Experiences</h3>
-          <p>Sharing takeaways from national hackathons, Pulchowk Campus BEI engineering student life, and personal project highlights.</p>
-          <ul class="blog-post-list">
-            <li>
-              <a href="#">Building Bhesbhusa: All Nepal Hackathon <span class="post-date">Mar 2026</span></a>
+          <h3>Reflections & Travel</h3>
+          <p class="card-subtitle">Sharing takeaways from national hackathons, Pulchowk Campus BEI engineering student life, and personal project highlights.</p>
+          
+          <ul class="premium-post-list">
+            <li class="premium-post-item">
+              <a href="#">
+                <span class="post-link-title">
+                  <svg viewBox="0 0 24 24"><path d="M12 10.9c-.61 0-1.1-.49-1.1-1.1 0-.61.49-1.1 1.1-1.1.61 0 1.1.49 1.1 1.1 0 .61-.49 1.1-1.1 1.1zm0-7.9C7.47 3 3.8 6.67 3.8 11.2c0 4.12 6.8 10.8 8.2 12.1.2.2.4.3.6.3s.4-.1.6-.3c1.4-1.3 8.2-7.98 8.2-12.1C20.2 6.67 16.53 3 12 3z"/></svg>
+                  Building Bhesbhusa: Hackathon
+                </span>
+                <span class="post-meta-date">Mar 2026</span>
+              </a>
             </li>
-            <li>
-              <a href="#">Life at Pulchowk Campus: Engineering Journey <span class="post-date">Jan 2026</span></a>
+            <li class="premium-post-item">
+              <a href="#">
+                <span class="post-link-title">
+                  <svg viewBox="0 0 24 24"><path d="M12 10.9c-.61 0-1.1-.49-1.1-1.1 0-.61.49-1.1 1.1-1.1.61 0 1.1.49 1.1 1.1 0 .61-.49 1.1-1.1 1.1zm0-7.9C7.47 3 3.8 6.67 3.8 11.2c0 4.12 6.8 10.8 8.2 12.1.2.2.4.3.6.3s.4-.1.6-.3c1.4-1.3 8.2-7.98 8.2-12.1C20.2 6.67 16.53 3 12 3z"/></svg>
+                  Life at Pulchowk: BEI Journey
+                </span>
+                <span class="post-meta-date">Jan 2026</span>
+              </a>
             </li>
           </ul>
         </article>
 
-        <!-- BOX 3: EDUCATION -->
-        <article class="blog-card">
-          <div class="blog-meta-header">
-            <span class="blog-category">Education</span>
+        <!-- BOX 3: EDUCATION TIMELINE -->
+        <article class="premium-blog-card education">
+          <div class="blog-card-icon">
+            <svg viewBox="0 0 24 24"><path d="M12 3L1 9l11 6 9-4.91V17h2V9L12 3zM5.89 12.55L12 15.9l6.11-3.35c.42-.23.89-.55.89-1V17c0 .55-.45 1-1 1H6c-.55 0-1-.45-1-1v-5.45c0 .45.47.77.89 1z"/></svg>
           </div>
-          <h3>Academic Background</h3>
-          <p>Academic institutions and milestones along my engineering and science education journey.</p>
-          <div class="edu-timeline">
-            <div class="edu-item">
-              <img src="https://res.cloudinary.com/dj85g5tsx/image/upload/v1776923612/nilogo_qtatjd.png" alt="National Infotech College Logo" class="edu-logo">
-              <div class="edu-info">
-                <h4>National Infotech College</h4>
-                <span class="edu-degree">+2</span>
-                <span class="edu-date">Jun 2020 – Jun 2022</span>
-              </div>
+          <h3>Education Background</h3>
+          <p class="card-subtitle">Milestones and institutions along my engineering and secondary science education journey.</p>
+          
+          <div class="timeline-nodes">
+            <div class="timeline-node">
+              <div class="node-title">National Infotech College</div>
+              <div class="node-degree">+2 Science</div>
+              <div class="node-date">Jun 2020 – Jun 2022</div>
             </div>
-            <div class="edu-item">
-              <img src="https://res.cloudinary.com/dj85g5tsx/image/upload/v1781074587/ChatGPT_Image_Jun_10__2026__11_57_17_AM-removebg-preview_mzo8yj.png" alt="Mount Edmund Sec School Logo" class="edu-logo">
-              <div class="edu-info">
-                <h4>Mount Edmund Sec School</h4>
-                <span class="edu-degree">School</span>
-                <span class="edu-date">May 2008 – Jun 2020</span>
-              </div>
+            <div class="timeline-node">
+              <div class="node-title">Mount Edmund Sec School</div>
+              <div class="node-degree">School Education</div>
+              <div class="node-date">May 2008 – Jun 2020</div>
             </div>
           </div>
         </article>
